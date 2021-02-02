@@ -4,6 +4,8 @@ CREATE TABLE turma (
     PRIMARY KEY (id_turma)
 );
 
+INSERTY INTO turma....
+
 CREATE TABLE aluno (
     id_aluno INT NOT NULL AUTO_INCREMENT,
     id_turma INT NOT NULL,

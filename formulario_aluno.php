@@ -28,7 +28,9 @@
 
             <?php 
                 while( $linha = mysqli_fetch_assoc($result)) {
-                    echo '<option value="'.$linha['id_turma'].'">'.$linha['nome'].'</option>';
+            ?>                    
+                    <option value="<?=$linha['id_turma']?>" <?=$selected?>><?=$linha['nome']?></option>';
+            <?php        
                 }
             ?>
             </select>
